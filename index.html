@@ -133,6 +133,16 @@
                         'fill-opacity': 0.6,
                     }
                 });
+                // add line to ouline the county
+                map.addLayer({
+                    'id': 'covid_data_outline',
+                    'type': 'line',
+                    'source': 'covid_data',
+                    'paint': {
+                        'line-color': '#666666',
+                        'line-width': 0.7
+                     }
+                });
 
                 const layers = [
                     '0-400',
